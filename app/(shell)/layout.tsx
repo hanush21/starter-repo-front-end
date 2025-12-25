@@ -50,6 +50,9 @@ export default function ShellLayout({
               <Button asChild variant="ghost" className="w-full justify-start">
                 <Link href="/dashboard">Dashboard</Link>
               </Button>
+              <Button asChild variant="ghost" className="w-full justify-start">
+                <Link href="/settings">Settings</Link>
+              </Button>
 
               <Button variant="ghost" className="w-full justify-start" disabled>
                 /settings (próximo)
