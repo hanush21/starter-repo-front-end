@@ -1,0 +1,73 @@
+name: "Feature"
+description: "Proponer una mejora o funcionalidad nueva"
+title: "[Feature]: "
+labels: ["type: feature", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer una mejora 
+        Intenta ser concreto: qué problema resuelve y cómo sabremos que está hecho.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / contexto
+      description: ¿Qué problema estás intentando resolver? ¿Para quién?
+      placeholder: "Como usuario..., cuando..., necesito..., porque..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta de solución
+      description: Describe la solución a alto nivel (sin entrar aún en implementación).
+      placeholder: "Propongo..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+      description: Lista de checks que deben cumplirse para considerar esto “done”.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Alcance
+      description: ¿Qué tamaño crees que tiene?
+      options:
+        - S (1-2 horas)
+        - M (0.5-1 día)
+        - L (2-3 días)
+        - XL (investigar / partir en tareas)
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tareas técnicas (opcional)
+      description: Si ya tienes una idea del plan técnico, lista tareas.
+      placeholder: |
+        - [ ] Crear/ajustar componente en src/...
+        - [ ] Añadir tests o checks
+        - [ ] Documentar ADR si aplica
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notas / referencias (opcional)
+      description: Links, screenshots o contexto extra.
+    validations:
+      required: false
+

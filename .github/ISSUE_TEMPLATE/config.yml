@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Preguntas / Discusiones"
+    url: "https://github.com/TU_USUARIO/TU_REPO/discussions"
+    about: "Si es una duda o quieres debatir una idea, abre un hilo en Discussions (mejor que un issue)."
+
+  - name: "Reportar vulnerabilidad de seguridad"
+    url: "https://github.com/TU_USUARIO/TU_REPO/security/advisories/new"
+    about: "Si encontraste un problema de seguridad, repórtalo aquí (no lo publiques en Issues)."
+
+  - name: "Video / Canal (Ops And Code)"
+    url: "https://www.youtube.com/@opsandcodeHQ"
+    about: "Si vienes por el video y quieres seguir la serie, aquí está el canal."

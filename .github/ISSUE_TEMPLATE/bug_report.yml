@@ -1,0 +1,77 @@
+name: "Bug"
+description: "Reportar un problema / comportamiento incorrecto"
+title: "[Bug]: "
+labels: ["type: bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportarlo 
+        Si puedes, adjunta pasos concretos y qué esperabas ver.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumen
+      description: ¿Qué ocurre en una frase?
+      placeholder: "Al entrar en /dashboard, ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      placeholder: "Debería..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      placeholder: "Ocurre..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos numerados, lo más exactos posible.
+      placeholder: |
+        1. Ir a...
+        2. Click en...
+        3. Ver...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Reproducibilidad
+      options:
+        - Siempre
+        - A veces
+        - No lo sé
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno
+      description: "SO + navegador + versión (si aplica)"
+      placeholder: "Windows 11 / Chrome 121 / Node 20"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / captura (opcional)
+      description: Pega aquí errores de consola o añade screenshots.
+      placeholder: "Error: ..."
+    validations:
+      required: false
+
